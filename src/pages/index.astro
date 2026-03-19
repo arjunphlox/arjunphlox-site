@@ -1,24 +1,21 @@
 ---
-                import Hero from '../components/Hero.astro';
-                import SectionLinks from '../components/SectionLinks.astro';
-                import CompetencyGrid from '../components/CompetencyGrid.astro';
-                import Bio from '../components/Bio.astro';
-                ---
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                  <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width" />
-                      <title>Arjun Phlox</title>
-                        <link rel="stylesheet" href="/arjunphlox-site/styles/global.css" />
-                        </head>
-                        <body>
-                          <div class="page-grid">
-                              <Hero />
-                                  <SectionLinks />
-                                      <CompetencyGrid />
-                                          <Bio />
-                                            </div>
-                                            </body>
-                                            </html>
-                                            
+import Hero from '../components/Hero.astro';
+import CompetencyGrid from '../components/CompetencyGrid.astro';
+import Bio from '../components/Bio.astro';
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Arjun Phlox</title>
+</head>
+<body>
+  <div class="page-grid">
+    <Hero />
+    <CompetencyGrid />
+    <Bio />
+  </div>
+</body>
+</html>
